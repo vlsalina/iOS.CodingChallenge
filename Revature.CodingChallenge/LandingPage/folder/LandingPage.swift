@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct LandingPage: View {
-    @EnvironmentObject var services: Services
+    @StateObject var services = Services()
     
     var body: some View {
         NavigationView {
             VStack {
+                NavigationBar()
                 ScrollView {
                     LazyVStack(spacing: 15) {
                         ForEach(services.breweries) { brewery in
@@ -22,6 +23,8 @@ struct LandingPage: View {
                 }
             }
             .padding(.horizontal)
+            .navigationTitle("")
+            .navigationBarHidden(true)
             .onAppear() {
                 services.getData()
             }
@@ -36,6 +39,5 @@ struct LandingPage: View {
 struct LandingPage_Previews: PreviewProvider {
     static var previews: some View {
         LandingPage()
-            .environmentObject(Services())
     }
 }

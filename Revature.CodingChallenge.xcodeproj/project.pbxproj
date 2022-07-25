@@ -16,6 +16,7 @@
 		612C0834288F0A2700644928 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0833288F0A2700644928 /* LandingPage.swift */; };
 		612C0836288F22A600644928 /* RandomBreweryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0835288F22A600644928 /* RandomBreweryPage.swift */; };
 		612C083D288F238800644928 /* DetailsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C083C288F238800644928 /* DetailsComponent.swift */; };
+		612C0842288F2A8700644928 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0841288F2A8700644928 /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		612C0833288F0A2700644928 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandingPage.swift; path = Revature.CodingChallenge/LandingPage/folder/LandingPage.swift; sourceTree = SOURCE_ROOT; };
 		612C0835288F22A600644928 /* RandomBreweryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBreweryPage.swift; sourceTree = "<group>"; };
 		612C083C288F238800644928 /* DetailsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsComponent.swift; sourceTree = "<group>"; };
+		612C0841288F2A8700644928 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		612C080E288EEA1200644928 /* Revature.CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				612C083E288F2A6200644928 /* CustomUI */,
 				612C0825288EEB1B00644928 /* Services */,
 				612C081E288EEAD300644928 /* RandomBreweryPage */,
 				612C081D288EEACC00644928 /* LandingPage */,
@@ -154,6 +157,30 @@
 			path = folder;
 			sourceTree = "<group>";
 		};
+		612C083E288F2A6200644928 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				612C083F288F2A7300644928 /* NavigationBar */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		612C083F288F2A7300644928 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				612C0840288F2A7B00644928 /* Views */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		612C0840288F2A7B00644928 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				612C0841288F2A8700644928 /* NavigationBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +254,7 @@
 				612C0812288EEA1200644928 /* ContentView.swift in Sources */,
 				612C0834288F0A2700644928 /* LandingPage.swift in Sources */,
 				612C0829288EEBA700644928 /* ModelData.swift in Sources */,
+				612C0842288F2A8700644928 /* NavigationBar.swift in Sources */,
 				612C0827288EEB2600644928 /* Services.swift in Sources */,
 				612C0836288F22A600644928 /* RandomBreweryPage.swift in Sources */,
 				612C083D288F238800644928 /* DetailsComponent.swift in Sources */,

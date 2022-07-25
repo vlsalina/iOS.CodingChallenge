@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct Revature_CodingChallengeApp: App {
-    @StateObject var services = Services()
-    
     var body: some Scene {
         WindowGroup {
             LandingPage()
-                .environmentObject(services)
         }
     }
 }

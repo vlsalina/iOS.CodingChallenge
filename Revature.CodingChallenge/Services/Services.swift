@@ -57,12 +57,13 @@ class Services: ObservableObject {
                 fatalError("Could not retrieve data")
             }
             
-            guard let jsonData = try? decoder.decode(ModelData.self, from: responseData) else {
+            guard let jsonData = try? decoder.decode([ModelData].self, from: responseData) else {
                 fatalError("Could not decode data")
             }
             
             DispatchQueue.main.async {
-                self.randomBrewery = jsonData
+                self.randomBrewery = jsonData.first!
+                //                placeholder = jsonData.first!
             }
         }
         

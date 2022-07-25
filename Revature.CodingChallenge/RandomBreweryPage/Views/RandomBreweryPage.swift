@@ -10,14 +10,21 @@ import SwiftUI
 struct RandomBreweryPage: View {
     @StateObject var services = Services()
     
-    @State var randomBrewery = ModelData(id: "", name: "", brewery_type: "", street: "", address_2: "", address_3: "", city: "", state: "", county_province: "", postal_code: "", country: "", longitude: "", latitude: "", phone: "", website_url: "", updated_at: "", created_at: "")
+    //    @State var randomBrewery = ModelData(id: "", name: "", brewery_type: "", street: "", address_2: "", address_3: "", city: "", state: "", county_province: "", postal_code: "", country: "", longitude: "", latitude: "", phone: "", website_url: "", updated_at: "", created_at: "")
     
     var body: some View {
-        VStack {
-            Text(randomBrewery.name)
-            Text("Address: \(randomBrewery.street ?? "N/A"), \(randomBrewery.city ?? "N/A"), \(randomBrewery.state)")
-            Text("Phone: \(randomBrewery.phone ?? "N/A")")
+        VStack(spacing: 5) {
+            NavigationBar()
+            VStack(alignment: .leading) {
+                Text(services.randomBrewery.name)
+                Text("Address: \(services.randomBrewery.street ?? "N/A"), \(services.randomBrewery.city ?? "N/A"), \(services.randomBrewery.state)")
+                Text("Phone: \(services.randomBrewery.phone ?? "N/A")")
+            }
+            Spacer()
         }
+        .padding(.horizontal)
+        .navigationTitle("")
+        .navigationBarHidden(true)
         .onAppear() {
             services.getRandomBrewery()
         }
