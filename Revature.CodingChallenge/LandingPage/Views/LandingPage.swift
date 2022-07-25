@@ -26,10 +26,10 @@ struct LandingPage: View {
             .navigationTitle("")
             .navigationBarHidden(true)
             .onAppear() {
-                services.getData()
+                LandingPageViewModel.getData(services: services)
             }
             .refreshable {
-                services.getData()
+                LandingPageViewModel.getData(services: services)
             }
             
         }
