@@ -8,7 +8,7 @@
 import Foundation
 
 class Services: ObservableObject {
-    @Published private(set) var cities = [ModelData]()
+    @Published private(set) var breweries = [ModelData]()
     
     func getData() {
         let url = "https://mocki.io/v1/214223dc-c8f4-4a2f-9749-8ce2f355d04f"
@@ -27,12 +27,20 @@ class Services: ObservableObject {
                 fatalError("Could not retrieve data")
             }
             
+            //            do {
+            //                self.cities = try! decoder.decode([ModelData].self, from: responseData)
+            //            } catch {
+            //                print(error.localizedDescription)
+            //            }
             guard let jsonData = try? decoder.decode([ModelData].self, from: responseData) else {
                 fatalError("Could not decode data")
             }
             
             DispatchQueue.main.async {
-                self.cities = jsonData
+                self.breweries = jsonData
+                for x in self.breweries {
+                    print(x.name)
+                }
             }
         }
         
