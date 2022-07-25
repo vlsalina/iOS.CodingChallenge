@@ -10,24 +10,15 @@ import SwiftUI
 struct LandingPage: View {
     @EnvironmentObject var services: Services
     
-    @State var showNextView = false
-    
     var body: some View {
         NavigationView {
             VStack {
                 ScrollView {
                     LazyVStack(spacing: 15) {
                         ForEach(services.breweries) { brewery in
-                            Button(action: {
-                                showNextView = true
-                            }) {
-                                DetailsComponent(breweryObj: brewery)
-                            }
+                            DetailsComponent(breweryObj: brewery)
                         }
                     }
-                }
-                NavigationLink(destination: RandomBreweryPage().environmentObject(services), isActive: $showNextView) {
-                    EmptyView()
                 }
             }
             .padding(.horizontal)
