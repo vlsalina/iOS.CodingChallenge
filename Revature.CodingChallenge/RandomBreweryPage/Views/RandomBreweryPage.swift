@@ -13,10 +13,22 @@ struct RandomBreweryPage: View {
     var body: some View {
         VStack(spacing: 5) {
             NavigationBar()
-            VStack(alignment: .leading) {
-                Text(services.randomBrewery.name)
-                Text("Address: \(services.randomBrewery.street ?? "N/A"), \(services.randomBrewery.city ?? "N/A"), \(services.randomBrewery.state)")
-                Text("Phone: \(services.randomBrewery.phone ?? "N/A")")
+            VStack {
+                HStack {
+                    Text(LocalizedStringKey("Name"))
+                    Text(": \(services.randomBrewery.name)")
+                    Spacer()
+                }
+                HStack {
+                    Text(LocalizedStringKey("Address"))
+                    Text(": \(services.randomBrewery.street ?? "N/A"), \(services.randomBrewery.city ?? "N/A"), \(services.randomBrewery.state)")
+                    Spacer()
+                }
+                HStack {
+                    Text(LocalizedStringKey("Phone"))
+                    Text(": \(services.randomBrewery.phone ?? "N/A")")
+                    Spacer()
+                }
             }
             Spacer()
         }

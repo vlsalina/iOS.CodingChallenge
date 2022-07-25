@@ -15,7 +15,7 @@ struct NavigationBar: View {
             NavigationLink(destination: LandingPage().navigationTitle("").navigationBarHidden(true)) {
                 HStack {
                     Spacer()
-                    Text("Breweries")
+                    Text(LocalizedStringKey("Breweries"))
                     Spacer()
                 }
                 .padding()
@@ -23,7 +23,7 @@ struct NavigationBar: View {
             NavigationLink(destination: RandomBreweryPage().navigationTitle("").navigationBarHidden(true)) {
                 HStack {
                     Spacer()
-                    Text("Random Brewery")
+                    Text(LocalizedStringKey("Random Brewery"))
                     Spacer()
                 }
                 .padding()

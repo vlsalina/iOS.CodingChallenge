@@ -13,11 +13,13 @@ struct DetailsComponent: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text(breweryObj.name)
+                Text(LocalizedStringKey("Name"))
+                Text(": \(breweryObj.name)")
                 Spacer()
             }
             HStack {
-                Text("Address: \(breweryObj.street ?? "N/A"), \(breweryObj.city ?? "N/A"), \(breweryObj.state)")
+                Text(LocalizedStringKey("Address"))
+                Text(": \(breweryObj.street ?? "N/A"), \(breweryObj.city ?? "N/A"), \(breweryObj.state)")
                     .font(.caption)
                 Spacer()
             }
