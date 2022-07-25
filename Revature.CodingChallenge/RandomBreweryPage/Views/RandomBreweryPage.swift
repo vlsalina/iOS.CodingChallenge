@@ -11,9 +11,9 @@ struct RandomBreweryPage: View {
     @StateObject var services = Services()
     
     var body: some View {
-        VStack(spacing: 5) {
+        VStack {
             NavigationBar()
-            VStack {
+            VStack(spacing: 8) {
                 HStack {
                     Text(LocalizedStringKey("Name"))
                     Text(": \(services.randomBrewery.name)")
@@ -36,10 +36,10 @@ struct RandomBreweryPage: View {
         .navigationTitle("")
         .navigationBarHidden(true)
         .onAppear() {
-            services.getRandomBrewery()
+            RandomBreweryPageViewModel.getRandomBrewery(services: services)
         }
         .refreshable {
-            services.getRandomBrewery()
+            RandomBreweryPageViewModel.getRandomBrewery(services: services)
         }
     }
 }

@@ -18,6 +18,8 @@
 		612C0842288F2A8700644928 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0841288F2A8700644928 /* NavigationBar.swift */; };
 		612C0845288F302100644928 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 612C0847288F302100644928 /* Localizable.strings */; };
 		612C084B288F318900644928 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C084A288F318900644928 /* LandingPage.swift */; };
+		612C084D288F35B400644928 /* LandingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C084C288F35B400644928 /* LandingPageViewModel.swift */; };
+		612C084F288F362F00644928 /* RandomBreweryPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C084E288F362F00644928 /* RandomBreweryPageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		612C0846288F302100644928 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		612C0848288F302400644928 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		612C084A288F318900644928 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		612C084C288F35B400644928 /* LandingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewModel.swift; sourceTree = "<group>"; };
+		612C084E288F362F00644928 /* RandomBreweryPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBreweryPageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		612C0821288EEAE900644928 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				612C084C288F35B400644928 /* LandingPageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		612C0823288EEAF200644928 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				612C084E288F362F00644928 /* RandomBreweryPageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 				612C0827288EEB2600644928 /* Services.swift in Sources */,
 				612C0836288F22A600644928 /* RandomBreweryPage.swift in Sources */,
 				612C083D288F238800644928 /* DetailsComponent.swift in Sources */,
+				612C084F288F362F00644928 /* RandomBreweryPageViewModel.swift in Sources */,
+				612C084D288F35B400644928 /* LandingPageViewModel.swift in Sources */,
 				612C084B288F318900644928 /* LandingPage.swift in Sources */,
 				612C0810288EEA1200644928 /* Revature_CodingChallengeApp.swift in Sources */,
 			);
