@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Revature.CodingChallenge
+
+  Created by Vincent Salinas on 7/25/22.
+  
+*/
+
+"Breweries" = "Breweries";
+"Name" = "Name";
+"Address" = "Address";
+"Random Brewery" = "Random Brewery";
