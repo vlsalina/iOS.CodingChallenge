@@ -16,7 +16,7 @@ struct LandingPage: View {
         NavigationView {
             VStack {
                 ScrollView {
-                    LazyVStack {
+                    LazyVStack(spacing: 15) {
                         ForEach(services.breweries) { brewery in
                             Button(action: {
                                 showNextView = true
@@ -30,6 +30,7 @@ struct LandingPage: View {
                     EmptyView()
                 }
             }
+            .padding(.horizontal)
             .onAppear() {
                 services.getData()
             }

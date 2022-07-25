@@ -14,10 +14,11 @@ struct DetailsComponent: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(breweryObj.name)
-               Spacer()
+                Spacer()
             }
             HStack {
-                Text("Address: \(breweryObj.street ?? ""), \(breweryObj.city ?? ""), \(breweryObj.state)")
+                Text("Address: \(breweryObj.street ?? "N/A"), \(breweryObj.city ?? "N/A"), \(breweryObj.state)")
+                    .font(.caption)
                 Spacer()
             }
         }

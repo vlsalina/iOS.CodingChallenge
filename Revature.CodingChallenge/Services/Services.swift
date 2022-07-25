@@ -27,20 +27,12 @@ class Services: ObservableObject {
                 fatalError("Could not retrieve data")
             }
             
-            //            do {
-            //                self.cities = try! decoder.decode([ModelData].self, from: responseData)
-            //            } catch {
-            //                print(error.localizedDescription)
-            //            }
             guard let jsonData = try? decoder.decode([ModelData].self, from: responseData) else {
                 fatalError("Could not decode data")
             }
             
             DispatchQueue.main.async {
                 self.breweries = jsonData
-                for x in self.breweries {
-                    print(x.name)
-                }
             }
         }
         
