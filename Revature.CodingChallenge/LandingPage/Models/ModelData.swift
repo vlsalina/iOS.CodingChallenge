@@ -47,7 +47,7 @@ class ModelData: Decodable, Identifiable {
     var updated_at: Date
     var created_at: Date
     
-    init(id: String, name: String, brewer_type: String, street: String, address_2: String, address_3: String, city: String, state: String, county_provice: String, postal_code: Int, country: String, longitude: Double, latitude: Double, phone: String, website_url: String, updated_at: Date, created_at: Date) {
+    init(id: String, name: String, brewer_type: String, street: String, address_2: String, address_3: String, city: String, state: String, county_province: String, postal_code: Int, country: String, longitude: Double, latitude: Double, phone: String, website_url: String, updated_at: Date, created_at: Date) {
         
         self.id = id
         self.name = name
