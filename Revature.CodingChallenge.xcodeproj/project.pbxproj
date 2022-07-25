@@ -11,6 +11,8 @@
 		612C0812288EEA1200644928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0811288EEA1200644928 /* ContentView.swift */; };
 		612C0814288EEA1400644928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612C0813288EEA1400644928 /* Assets.xcassets */; };
 		612C0817288EEA1400644928 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612C0816288EEA1400644928 /* Preview Assets.xcassets */; };
+		612C0827288EEB2600644928 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0826288EEB2600644928 /* Services.swift */; };
+		612C0829288EEBA700644928 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C0828288EEBA700644928 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		612C0811288EEA1200644928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		612C0813288EEA1400644928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		612C0816288EEA1400644928 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		612C0826288EEB2600644928 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		612C0828288EEBA700644928 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		612C080E288EEA1200644928 /* Revature.CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				612C0825288EEB1B00644928 /* Services */,
 				612C081E288EEAD300644928 /* RandomCityPage */,
 				612C081D288EEACC00644928 /* LandingPage */,
 				612C080F288EEA1200644928 /* Revature_CodingChallengeApp.swift */,
@@ -99,6 +104,7 @@
 		612C0820288EEAE500644928 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				612C0828288EEBA700644928 /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +135,14 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		612C0825288EEB1B00644928 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				612C0826288EEB2600644928 /* Services.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				612C0812288EEA1200644928 /* ContentView.swift in Sources */,
+				612C0829288EEBA700644928 /* ModelData.swift in Sources */,
+				612C0827288EEB2600644928 /* Services.swift in Sources */,
 				612C0810288EEA1200644928 /* Revature_CodingChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
